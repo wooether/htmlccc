@@ -1,0 +1,707 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*::before,::after{
+    box-sizing: border-box;
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap');
+
+
+
+
+.container{
+
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg');
+
+    background-position: right top;
+    background-repeat:no-repeat;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/*球球*/
+
+.bg_ball-1{
+    position: absolute;
+    top: 500px;
+    left: -220px;
+    z-index: -999;
+}
+
+
+.bg_ball-1 img{
+    max-width: 100%;
+vertical-align: bottom;
+
+}
+
+
+/*nav*/
+
+
+
+.header-bg{
+    position: relative;
+
+
+}
+
+.beader{
+    position: absolute;
+    top: 0;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    margin-bottom: 30px;
+    align-items: center;
+
+}
+
+.nav img{
+width: 218px;
+
+}
+
+.nav .btn{
+background: #FF5D50;
+color: white;
+text-decoration: none;
+padding: 8px 32px;
+font-size: 16px;
+border-radius: 22px;
+
+}
+
+
+/*首頁圖 */
+
+.nav-banner{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 217px;    
+}
+
+.nav-banner img{
+    /*position: relative;*/
+    width: 532px;
+
+    
+}
+
+.nav-banner .in{
+    /*position: absolute;*/
+    top: 20px;
+    
+
+}
+
+.nav-banner h2{
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #221E1F;
+    font-weight: bold;
+    line-height: 1.4;
+    font-family: 'Noto Sans TC', sans-serif;
+
+
+    
+
+}
+
+.nav-banner .in-1{
+    color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+}
+
+.nav-banner .in-2{
+    font-size: 20px;
+    color: #221E1F;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+
+
+
+/*三大平台，我來搞定*/
+
+.banner-platform{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.banner-platform h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+
+.platform_card{
+    display: flex;
+    justify-content: space-around; 
+    
+
+
+}
+
+.banner-platform h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.platform-txt p{
+    font-size: 16px;
+    color: #747474;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.banner-platform li{
+    width: 222px;
+
+
+}
+
+.banner-platform img{
+    width: 90px;
+    margin-bottom: 24px;
+}
+
+
+
+/*任何的角色，我都能給*/
+
+.banner-explain{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.banner-explain h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.explain_txt{
+    font-size: 20px;
+    margin-bottom: 48px;
+}
+
+.banner-explain ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-explain li{
+    width: 24%;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+
+}
+
+.banner-explain img{
+    border-radius: 12px 12px 0 0;
+
+}
+
+.banner-explain h4{
+    font-size: 16px;
+    color: #56C4C5;
+    font-weight: bold;
+    padding: 16px;
+
+}
+
+.banner-explain p{
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 16px 16px;
+}
+
+/*快速了解*/
+
+.banner-function{
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+}
+
+.function-r{
+    width: 48%;
+}
+
+.function-l{
+
+    width: 48%;
+    justify-content: center;
+
+    
+}
+
+.function-card{
+
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+
+}
+
+.function-card li{
+    
+    box-shadow: 0px 2px 10px #00000014;
+
+    padding: 32px 32px 48px 32px;
+    margin-right: 47px;
+
+    margin-bottom: 24px;
+
+
+}
+
+
+.function-card .card-img{
+    width: 86px;
+    background: #ffffff;
+    padding: 17px;
+    border-radius:  50%;
+    box-shadow:  0px 2px 10px #00000014;
+    margin-bottom: 24px;
+
+}
+
+.function-card img{
+    width: 52px;
+    height: 52px;
+}
+
+.function-card h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.function-card p{
+    width: 166px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+
+
+.function-r h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 1.4;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.function-r p{
+    width: 50%;
+}
+
+.function-r p{
+    font-size: 18px;
+    margin-bottom: 36px;
+    line-height: 1.4;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.function-r a{
+    padding: 12px 32px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #56C4C5;
+    border-radius:  50px;    
+    text-decoration:none;
+
+}
+
+
+/*好評如潮*/
+
+
+.banner-feedback h3{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 140px;
+
+}
+
+.feedback-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+
+.feedback-card li{
+
+    width: 288px;
+    padding: 48px 32px 24px 32px;
+
+    box-shadow:  0px 2px 10px #00000014;
+    margin-bottom: 100px;
+    border-radius:  12px;
+    position: relative;
+    margin-left: 20px;
+    
+}
+
+.feedback-card .photo{
+    width: 80px;
+    position: absolute;
+    top: -50px;
+    box-shadow:  0px 2px 10px #00000014;
+    border-radius:  50%;
+}
+
+.feedback-card hr{
+    width: 100%;
+    margin-left:0;
+    margin-bottom: 24px;
+
+
+}
+
+.feedback-card p{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.feedback-card h4{
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.feedback-card .line{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*底部2*/
+
+.footer-plan{
+   background:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg) ; 
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 503px;
+   position: relative;
+}
+
+
+
+/*底部*/
+
+.footer-plan {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+
+.footer-plan h3{
+    font-size: 24px;
+    padding-top: 320px;
+    margin-bottom: 48px;
+    
+}
+
+
+.footer-plan a{
+    
+    padding: 15px 32px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #56C4C5;
+    border-radius:  50px;    
+    text-decoration:none; 
+    
+}
+
+.footer{
+    background: #F5F5F5;
+    text-align: center;
+    padding: 16px;
+}
+
+
+
+@media(max-width:992px){}
+
+
+@media(max-width:768px){
+
+.banner-explain ul{
+    flex-wrap: wrap;
+}
+
+.banner-explain li{
+    width: 48%;
+    margin-bottom: 24px;
+}
+
+
+}
+    
+
+
+    
+
+@media(max-width:576px){}
+
+
+@media(max-width:380px){
+
+         /*球球*/
+
+        .bg_ball-1{
+        width: 150px;
+        left: -80px;
+        top: 800px;
+
+         }
+    
+        .container{
+            background-image:  url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+            background-repeat:no-repeat;
+            background-position: center 380px ; 
+            background-size: 320px;
+            max-width: 335px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+
+        .nav img{
+            width: 150px;
+            
+        }
+
+        .nav .btn{
+            padding: 8px 32px;
+
+        }
+
+
+        .nav-banner{
+            display:block;
+
+
+        }
+
+        .nav-banner h2{
+            font-size: 32px;
+        }
+
+        .nav-banner .in{
+            margin-bottom: 32px;
+
+        }
+
+
+
+        .nav-banner img{
+            width: 100%;
+            margin-bottom: -140px;
+        }
+
+
+        /*三大平台*/
+
+        .banner-platform{
+            margin-bottom: 60px;
+        }
+
+        .platform_card{
+            display:block;  
+        }
+
+        .platform_card li{
+            margin-bottom: 24px;
+            margin: auto;            
+            
+        }
+
+
+
+        .explain_card{
+            display:block;
+
+        }
+
+        .explain_card li{
+            width: 100%;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+
+        }
+
+
+        /*任何角色*/
+
+        .banner-explain li{
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+   
+
+
+        /*快速了解  */
+
+
+        .banner-function{
+            display:block;
+        }
+        
+
+        .function-r{
+            width: 100%;
+            margin-bottom: 36px;
+            text-align: center;
+        }
+
+        .function-r p{
+        }
+        
+        .function-card{
+            justify-content: center;
+        }
+
+
+        .function-card li{
+
+            margin-right: 0px;
+        }
+
+        .function-l{    
+            width: 100%;
+        }
+
+
+        /*好評如潮*/
+
+        
+        .banner-feedback h3{
+
+            margin-bottom: 88px;
+        }
+
+        .feedback-card{
+            display:block;
+
+        }
+
+        .feedback-card li{
+            margin: auto;
+            margin-bottom: 100px;
+
+        }
+
+        .function-r p{
+            width: 100%;
+        }
+
+        .footer-plan h3{
+
+            font-size: 20px;
+            font-weight: bold;
+
+
+        }
+
+
+
+}
